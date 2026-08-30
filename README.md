@@ -42,3 +42,6 @@ Each project article includes an accessible link to its live GitHub Pages deploy
 ## Deployment
 
 Push the `POR2-features-resit` branch to GitHub and configure GitHub Pages to deploy the intended branch.
+## Resit submission branch
+
+This branch contains the Portfolio 2 resit implementation, including the KPI section, validated get-in-touch form, updated project links, responsive styling, and accessibility improvements.
