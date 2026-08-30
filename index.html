@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio 2 showcase by Felicia Baptiste." />
+  <title>Portfolio 2 | Felicia Baptiste</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrapper" aria-label="Main navigation">
+      <a href="index.html" class="logo">Felicia Baptiste</a>
+      <div class="nav-links">
+        <a href="#projects" aria-current="page">Projects</a>
+        <a href="#kpis">Highlights</a>
+        <a href="#contact">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Portfolio 2</p>
+      <h1>Frontend development projects</h1>
+      <p>
+        A collection of projects showing responsive design, JavaScript functionality,
+        API integration, authentication, and project improvements.
+      </p>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Featured Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/science-museum.jpg" alt="Community Science Museum project thumbnail" />
+          <div class="card-content">
+            <p class="tag">CSS Frameworks / HTML & CSS</p>
+            <h3>Community Science Museum</h3>
+            <p>An accessible museum website with improved layouts, calendar, responsive design, and polished UI.</p>
+            <a href="science-museum.html">Read more</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/gamehub.jpg" alt="GameHub project thumbnail" />
+          <div class="card-content">
+            <p class="tag">JavaScript Frameworks</p>
+            <h3>GameHub</h3>
+            <p>An e-commerce game store with product cards, cart functionality, checkout fixes, and improved UX.</p>
+            <a href="gamehub.html">Read more</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/needle-thread.jpg" alt="Felicia's Needle and Thread project thumbnail" />
+          <div class="card-content">
+            <p class="tag">Personal API Project</p>
+            <h3>Felicia's Needle & Thread</h3>
+            <p>A sewing blog platform with login, feed, post creation, API integration, and responsive design.</p>
+            <a href="needle-thread.html">Read more</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="kpis" id="kpis" aria-labelledby="kpis-title">
+      <div class="section-heading">
+        <p class="eyebrow">Portfolio highlights</p>
+        <h2 id="kpis-title">Progress in numbers</h2>
+      </div>
+      <dl class="kpi-grid">
+        <div class="kpi-card">
+          <dt>Projects completed</dt>
+          <dd>3</dd>
+        </div>
+        <div class="kpi-card">
+          <dt>Years of experience</dt>
+          <dd>1+</dd>
+        </div>
+        <div class="kpi-card">
+          <dt>Clients</dt>
+          <dd>3</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-title">Let’s build something thoughtful</h2>
+        <p>Have a project or an opportunity in mind? Complete the form and I’ll get back to you.</p>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" minlength="5" autocomplete="name" required aria-describedby="name-error" />
+          <small class="field-hint">Enter at least five letters.</small>
+          <p class="field-error" id="name-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" minlength="8" autocomplete="email" required aria-describedby="email-error" />
+          <small class="field-hint">Enter a valid email with at least eight characters.</small>
+          <p class="field-error" id="email-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="telephone">Telephone number</label>
+          <input id="telephone" name="telephone" type="tel" inputmode="tel" autocomplete="tel" pattern="[+0-9() -]*" required aria-describedby="telephone-error" />
+          <small class="field-hint">Enter at least ten digits.</small>
+          <p class="field-error" id="telephone-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field form-field-full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" minlength="30" required aria-describedby="message-error"></textarea>
+          <small class="field-hint">Enter at least 30 characters.</small>
+          <p class="field-error" id="message-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-actions form-field-full">
+          <button type="submit">Send message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Felicia Baptiste</p>
+  </footer>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>
